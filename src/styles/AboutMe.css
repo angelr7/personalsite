@@ -1,0 +1,36 @@
+#LinkButton:hover {
+  cursor: pointer;
+}
+
+#LanguageIconParent:hover {
+  cursor: pointer;
+}
+
+@keyframes Shrink {
+  0% {
+    height: 30vmin;
+  }
+
+  100% {
+    height: 0vmin;
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ButtonGrow {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
