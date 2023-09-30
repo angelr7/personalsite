@@ -11,6 +11,7 @@ import {
   MainContainer,
   TypedMessage,
 } from "../styles/ContactPage";
+import { OPEN_SANS } from "../styles/common";
 
 const MESSAGE = "Contact Me Today!";
 const EMAIL = "ar7@stanford.edu";
@@ -121,6 +122,7 @@ export default function ContactPage() {
         newestOnTop={false}
         position="top-center"
         hideProgressBar={false}
+        bodyStyle={{ fontFamily: OPEN_SANS }}
         progressStyle={{ backgroundColor: "#FFF" }}
         icon={<FaCircleInfo style={{ color: "#FFF" }} />}
       />

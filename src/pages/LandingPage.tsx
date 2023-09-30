@@ -12,14 +12,14 @@ import { LIGHT_GRAY } from "../styles/common";
 const INTRO_TEXT = "Hi, I'm Angel!";
 
 export default function LandingPage() {
-  const loaded = useRef(false);
   const currCharIdx = useRef(0);
+  const [loaded, setLoaded] = useState(false);
   const [introText, setIntroText] = useState("");
   const [hovering, setHovering] = useState(false);
 
   useEffect(() => {
-    if (!loaded.current) {
-      loaded.current = true;
+    if (!loaded) {
+      setLoaded(true);
     } else if (currCharIdx.current < INTRO_TEXT.length) {
       setTimeout(() => {
         setIntroText(INTRO_TEXT.slice(0, ++currCharIdx.current));
